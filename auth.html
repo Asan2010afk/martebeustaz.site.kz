@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Кіру / Тіркелу | Martebe Ustaz</title>
+  <link rel = icon
+  href="site.logo.jpg"
+>
+
+  <link rel="stylesheet" href="auth.css" />
+</head>
+
+<body>
+
+  <!-- Навигация -->
+  <header class="site-header">
+    <a href="index.html" class="logo">@martebe_ustaz</a>
+  
+    <div class="burger" onclick="toggleBurger()">☰</div>
+  
+    <nav class="nav-menu" id="navMenu">
+      <a href="about.html" data-kz="🧭 Біз туралы" data-ru="🧭 О нас"></a>
+      <a href="posts.html" data-kz="📚 Посттар" data-ru="📚 Посты"></a>
+      <a href="contacts.html" data-kz="📞 Байланыс" data-ru="📞 Связь"></a>
+      <a href="auth.html" data-kz="🔑 Кіру / Тіркелу" data-ru="🔑 Вход/Регистрация"></a>
+      <a href="dashboard.html" data-kz="👤 Профиль" data-ru="👤 Профиль"></a>
+    </nav>
+  </header>
+  
+    </div>
+
+    <div class="language-switcher">
+      <button id="kzBtn">Қаз</button>
+      <button id="ruBtn">Рус</button>
+    </div>
+
+  </header>
+
+<div class="profile-card">
+  <h2 id="form-title" data-ru="Вход" data-kz="Кіру">Кіру</h2>
+
+  <form id="auth-form">
+    <input type="text" id="name-input" placeholder="Username" required>
+    <input type="password" id="password" placeholder="password" required>
+    <button class="save-btn" type="submit" id="submitBtn" data-ru="Вход" data-kz="Кіру" >Кіру</button>
+  </form>
+
+  <p id="toggle-text" >Тіркелгіңіз жоқ па?  <a id="toggle-link" href="#" data-kz="Тіркелу" data-ru="Регистрация"></a>
+  </p>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-ru="© 2025 @martebe_ustaz. Все права защищены." data-kz="© 2025 @martebe_ustaz. Барлық құқықтар қорғалған. "></p>
+    </div>
+  </footer>
+
+    <script>
+    function toggleBurger() {
+      document.getElementById('navMenu').classList.toggle('show');
+    }
+    </script>
+    <script src="auth.js"></script>
+    <script src="scroll.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

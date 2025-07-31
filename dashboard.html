@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Жеке кабинет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="guard.js"></script> <!-- Защита от неавторизованного доступа -->
+  <link rel = icon
+  href="site.logo.jpg"
+>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="site-header">
+    <a href="index.html" class="logo">@martebe_ustaz</a>
+  
+    <div class="burger" onclick="toggleBurger()">☰</div>
+  
+    <nav class="nav-menu" id="navMenu">
+      <a href="about.html" data-kz="🧭 Біз туралы" data-ru="🧭 О нас"></a>
+      <a href="posts.html" data-kz="📚 Посттар" data-ru="📚 Посты"></a>
+      <a href="contacts.html" data-kz="📞 Байланыс" data-ru="📞 Связь"></a>
+      <a href="auth.html" data-kz="🔑 Кіру / Тіркелу" data-ru="🔑 Вход/Регистрация"></a>
+      <a href="dashboard.html" data-kz="👤 Профиль" data-ru="👤 Профиль"></a>
+    </nav>
+  </header>
+
+  <div class="language-switcher">
+    <button id="kzBtn">Қаз</button>
+    <button id="ruBtn">Рус</button>
+  </div>
+
+<div class="profile-card">
+  <h2 data-kz=" Жеке кабинет" data-ru=" Личный кабинет"></h2>
+
+  <div class="avatar-wrapper">
+    <img id="avatar" src="default-avatar.png" alt="Avatar" class="avatar-img">
+    <label class="upload-btn" data-kz="Аватарды өзгерту" data-ru="Изменить аватар">
+      
+      <input type="file" id="avatar-input" accept="image/*" hidden>
+    </label>
+  </div>
+
+  <div class="profile-fields">
+    <label data-kz="Атыңыз:" data-ru="Имя:"></label>
+    <input type="text" id="name-input" placeholder="Аты-жөніңіз">
+
+    <label>Email:</label>
+    <input type="email" id="email-input" placeholder="example@mail.com">
+  </div>
+
+  <div class="profile-buttons">
+    <button class="save-btn" onclick="saveProfile()" data-kz="💾 Сақтау" data-ru="💾 Сохранить"></button>
+    <button class="logout-btn" onclick="logout()" data-kz="🚪 Шығу" data-ru="🚪 Выйти"></button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>
